@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  .about__item {
+    display: inline-block;
+    width: 800px;
+    padding: 0px 20px;
+    font-size: 100px;
+    margin-bottom: 64px;
+    font-family: 'Jua', sans-serif;
+  
+    &:nth-child(odd) img {
+      margin-bottom: 64px;
+    }
+  
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+  
+    img {
+      object-fit: cover;
+      height: 500px;
+      width: 500px;
+    }
+  }
+  
+  .scroll__section {
+    position: relative;
+    height: 350vh;
+  }
+  
+  .scroll__wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .scroll__content {
+    display: flex;
+    padding: 80px;
+    height: 100vh;
+    width: 350vh;
+    will-change: transform;
+  }
+  
